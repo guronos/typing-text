@@ -11,9 +11,17 @@
 import { useGetDataFromAPI } from './services/getDataFromAPI.ts'
 import { useKeyPush } from './services/handlerKeyPush.ts'
 
-let [text] = await useGetDataFromAPI()
-const {russianLanguage, currentLetter, errorCurrentLetter, successLetter} = useKeyPush(text)
+const URL_API = 'https://baconipsum.com/api/?type=meat-and-filler&sentences=25&text'
+const [text] = await useGetDataFromAPI(URL_API)
 
+const {russianLanguage, currentLetter, errorCurrentLetter, successLetter, quantityText, quantityError} = useKeyPush(text)
+defineExpose ({
+    successLetter,
+    errorCurrentLetter,
+    quantityText,
+    currentLetter,
+    quantityError
+})
 </script>
 <style lang="scss">
 .text {

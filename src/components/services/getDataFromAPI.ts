@@ -1,9 +1,5 @@
-const API = 'https://baconipsum.com/api/'
-const params = '?type=meat-and-filler&sentences=25&text'
-
-export const useGetDataFromAPI =
-async function () {
-    const responseFromAPI = await fetch(`${API}${params}`)
-    const data = await responseFromAPI.json()
+export async function useGetDataFromAPI(URL:string) {
+    const responseFromAPI = await fetch(`${URL}`)
+    const data = responseFromAPI.json()
     return data
-}
+}    
