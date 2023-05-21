@@ -20,8 +20,8 @@ defineExpose ({
     errorCurrentLetter,
     quantityText,
     currentLetter,
-    quantityError
-})
+    quantityError,
+    })
 </script>
 <style lang="scss">
 .text {
