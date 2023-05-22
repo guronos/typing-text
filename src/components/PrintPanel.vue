@@ -4,8 +4,8 @@
       <div class="warning" data-title="Выбрана русская раскладка клавиатуры!" v-if="russianLanguage"></div>
       <template v-for="(letter, id) in text" :key="id">
         <transition name="error">
-        <img class="error__image" src="../assets/error.jpg" v-if="errorCurrentLetter === id" >
-    </transition>
+          <img class="error__image" src="../assets/error.jpg" v-if="errorCurrentLetter === id" />
+        </transition>
         <span :class="{ success: successLetter[id] === true, carriage: currentLetter === id, 'error__wrap-letter': errorCurrentLetter === id }">{{ letter }}</span>
       </template>
     </div>
@@ -69,14 +69,14 @@ defineExpose({
   border: 1px solid #333;
 }
 .error__image {
-    position: absolute;
-    left: 5%;
+  position: absolute;
+  left: 5%;
 }
 .error-enter-active {
-    transition: all 0.1s ease;
+  transition: all 0.1s ease;
 }
 .error-leave-active {
-    transition: all 0.1s ease;
+  transition: all 0.1s ease;
 }
 .error-enter-from,
 .error-leave-to {
