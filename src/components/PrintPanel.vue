@@ -10,7 +10,9 @@
       </template>
     </div>
     <div>
-      <button class="btn btn-info mt-4 text-white bg-opacity-75 shadow" @click="refreshPage">Начать заново</button>
+      <button class="btn btn-info mt-4 text-white bg-opacity-75 shadow" @click="refreshPage">
+        <div class="d-flex align-items-center"><img src="../assets/refresh.svg" class="mx-1" /><span>Начать заново</span></div>
+      </button>
     </div>
   </div>
 </template>

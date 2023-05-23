@@ -1,23 +1,28 @@
 <template>
   <div class="d-flex main__title rounded-top justify-content-center">
-    <div class="m-2">
-      Скорость: <span class="text-white bg-opacity-75">{{ speedPrint }} зн/мин</span>
+    <div class="my-2 mx-3">
+      <div class="d-flex align-items-center"><img class="px-1" src="../assets/speed.svg" alt="speed icon" /> Скорость:</div>
+      <div class="text-white bg-opacity-75">{{ speedPrint }} зн/мин</div>
     </div>
-    <div class="m-2">
-      Точность: <span class="text-white bg-opacity-75">{{ accuracy }}%</span>
+    <div class="my-2 mx-3">
+      <div class="d-flex align-items-center"><img class="px-1" src="../assets/accuracy.svg" alt="accuracy icon" /> Точность:</div>
+      <div class="text-white bg-opacity-75">{{ accuracy }}%</div>
     </div>
-    <div class="m-2">
-      Символов без ошибок: <span class="text-white bg-opacity-75">{{ quantitySuccessLetter }}</span>
+    <div class="my-2 mx-3">
+      <div class="d-flex align-items-center"><img class="px-1" src="../assets/succes.svg" alt="succes icon" /> Символов без ошибок:</div>
+      <div class="text-white bg-opacity-75">{{ quantitySuccessLetter }}</div>
     </div>
-    <div class="m-2">
-      Всего символов в тексте: <span class="text-white bg-opacity-75">{{ printInfo?.quantityText }}</span>
+    <div class="my-2 mx-3">
+      <div class="d-flex align-items-center"><img class="px-1" src="../assets/text.svg" alt="text icon" /> Всего символов в тексте:</div>
+      <div class="text-white bg-opacity-75">{{ printInfo?.quantityText }}</div>
     </div>
-    <div class="m-2">
-      Ошибок: <span class="text-white bg-opacity-75">{{ printInfo?.quantityError }}</span>
+    <div class="my-2 mx-3">
+      <div class="d-flex align-items-center"><img class="px-1" src="../assets/errors.svg" alt="errors icon" /> Ошибок:</div>
+      <div class="text-white bg-opacity-75">{{ printInfo?.quantityError }}</div>
     </div>
-    <div class="m-2">
-      Прошедшее время:
-      <span class="text-white bg-opacity-75">{{ pastTime }}</span>
+    <div class="my-2 mx-3">
+      <div class="d-flex align-items-center"><img class="px-1" src="../assets/time.svg" alt="time icon" /> Прошедшее время:</div>
+      <div class="text-white bg-opacity-75">{{ pastTime }}</div>
     </div>
   </div>
 
