@@ -23,6 +23,7 @@ import { useKeyPush } from './services/handlerKeyPush.ts';
 const URL_API = 'https://baconipsum.com/api/?type=meat-and-filler&sentences=25&text';
 const [text] = await useGetDataFromAPI(URL_API);
 
+
 const { russianLanguage, currentLetter, errorCurrentLetter, successLetter, quantityText, quantityError } = useKeyPush(text);
 
 const refreshPage = () => {
